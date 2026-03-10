@@ -43,6 +43,33 @@ header {
 .logo-text small { color: var(--text-gray); font-size: 0.7rem; }
 
 .menu-icon { font-size: 1.5rem; cursor: pointer; }
+/* Navigation Menu Styling */
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: var(--text-white);
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: 0.3s;
+    opacity: 0.8;
+}
+
+.nav-menu ul li a:hover {
+    color: var(--accent-green);
+    opacity: 1;
+}
+
+/* Hide menu on mobile, show hamburger icon instead */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+}
 
 /* Hero Section */
 .hero {
@@ -133,4 +160,5 @@ h1 {
     opacity: 0.5;
     font-size: 1.5rem;
     font-weight: bold;
+
 }
