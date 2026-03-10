@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MargDarshak - Cyber Security Tool</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Stop Cyber Threats Before They Strike</h1>
+    <p>Verify suspicious links instantly with our free, Machine Learning-powered phishing detection tool.</p>
+    <div class="url-input">
+      <input type="text" id="url" placeholder="Paste the suspicious URL or link here">
+      <button onclick="verifyLink()">Verify Link</button>
+    </div>
+  </header>
+
+  <!-- How it works -->
+  <section class="how-it-works">
+    <h2 style="text-align:center; margin-bottom:2rem;">How MargDarshak Works</h2>
+    <div class="steps">
+      <div class="step">
+        <h3>1. Copy the Link</h3>
+        <p>Found a suspicious link in your email, SMS, or social media? Copy it safely without clicking on it directly.</p>
+      </div>
+      <div class="step">
+        <h3>2. Paste & Scan</h3>
+        <p>Paste the URL into the MargDarshak search bar above and hit the verify button to initiate the scan.</p>
+      </div>
+      <div class="step">
+        <h3>3. Get Instant Results</h3>
+        <p>Our ML algorithm instantly cross-references the domain against threat databases to tell you if it's safe.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose -->
+  <section class="why-choose">
+    <h2>Why Choose MargDarshak?</h2>
+    <div class="features">
+      <div class="feature">
+        <h4>AI & Machine Learning Powered</h4>
+        <p>Continuously learns from new cyber threats and structural anomalies to provide the most accurate detection rates.</p>
+      </div>
+      <div class="feature">
+        <h4>100% Free to Use</h4>
+        <p>Developed as a public service initiative by Indian Cyber Security Solutions to protect everyday users.</p>
+      </div>
+      <div class="feature">
+        <h4>Privacy First</h4>
+        <p>We only analyze the URL to detect threats. We do not track, store, or sell your personal browsing data.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Section -->
+  <section class="video-section">
+    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="MargDarshak Video" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Indian Cyber Security Solutions. All rights reserved.</p>
+    <p>Certified Excellence: ISO 27001 | ISO 9001</p>
+    <p>Strategic Members: <a href="#">Nasscom</a> | <a href="#">DSCI</a> | <a href="#">ICC</a></p>
+  </footer>
+
+  <script>
+    function verifyLink() {
+      const url = document.getElementById('url').value;
+      if(url){
+        alert("Verification request sent for: " + url);
+      } else {
+        alert("Please enter a URL first.");
+      }
+    }
+  </script>
+
+</body>
+</html>
